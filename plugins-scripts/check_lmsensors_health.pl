@@ -38,7 +38,7 @@ $plugin->add_mode(
 );
 $plugin->add_default_args();
 $plugin->add_arg(
-    spec => 'sensorscmd',
+    spec => 'sensorscmd=s',
     help => '--sensorscmd
    The path to the sensors command',
     required => 0,
@@ -56,8 +56,6 @@ if (! $plugin->check_messages()) {
     $plugin->add_ok($plugin->get_extendedinfo(" "))
         if $plugin->get_extendedinfo();
   }
-} elsif ($plugin->opts->snmpwalk && $plugin->opts->offline) {
-  ;
 } else {
   $plugin->add_critical('wrong device');
 }

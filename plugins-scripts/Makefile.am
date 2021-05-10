@@ -7,8 +7,8 @@ GL_MODULES=\
   ../GLPlugin/lib/Monitoring/GLPlugin/Item.pm \
   ../GLPlugin/lib/Monitoring/GLPlugin/TableItem.pm
 EXTRA_MODULES=\
-  Classes/LMSENSORS/Components/SensorSubsystem.pm \
-  Classes/LMSENSORS.pm \
+  Classes/Linux/Components/LMSensorSubsystem.pm \
+  Classes/Linux.pm \
   Classes/Device.pm
 
 SED=/bin/sed
